@@ -10,7 +10,7 @@ class union_find {
 	size_t n;
 	std::vector<int32_t> aux; 
 public:
-	union_find(int _n) : n(-_n), aux(_n, -1) {}
+	union_find(size_t _n) : n(_n), aux(_n, -1) {}
 	size_t which(size_t x) {
 		assert(x < n);
 		if (aux[x] < 0) return x;
